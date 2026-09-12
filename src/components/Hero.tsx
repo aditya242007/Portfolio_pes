@@ -118,7 +118,7 @@ export default function Hero() {
                 src="/aditya.jpg"
                 alt="Aditya Kalure"
                 fill
-                className="object-cover object-top rounded-2xl"
+                className="object-cover object-[center_65%] rounded-2xl"
                 priority
               />
             </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ExternalLink } from "lucide-react";
 import { certificationsData } from "@/data/certifications";
 
 export default function Certifications() {
@@ -19,7 +20,7 @@ export default function Certifications() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.4 }}
-              className="p-6 border border-border rounded-xl bg-background hover:bg-border/10 transition-colors flex flex-col justify-between min-h-[160px]"
+              className="p-6 border border-border rounded-xl bg-background hover:bg-border/10 transition-colors flex flex-col justify-between min-h-[180px] group"
             >
               <div>
                 <h3 className="text-lg font-medium tracking-tight leading-snug mb-2">
@@ -29,12 +30,27 @@ export default function Certifications() {
                   {cert.issuer}
                 </p>
               </div>
-              
-              {cert.date && (
-                <div className="text-xs font-mono text-muted uppercase tracking-wider mt-4">
-                  {cert.date}
-                </div>
-              )}
+
+              <div className="flex items-center justify-between mt-4">
+                {cert.date && (
+                  <div className="text-xs font-mono text-muted uppercase tracking-wider">
+                    {cert.date}
+                  </div>
+                )}
+
+                {cert.link && (
+                  <a
+                    href={cert.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 text-xs font-mono text-muted hover:text-foreground transition-colors group-hover:underline underline-offset-4"
+                    aria-label={`View certificate for ${cert.name}`}
+                  >
+                    <span>View certificate</span>
+                    <ExternalLink size={12} />
+                  </a>
+                )}
+              </div>
             </motion.div>
           ))}
         </div>

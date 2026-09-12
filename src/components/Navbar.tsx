@@ -57,10 +57,9 @@ export default function Navbar() {
             Contact
           </Link>
           <a
-            href="[PLACEHOLDER_RESUME_URL]"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-medium px-4 py-2 border border-border rounded-full hover:bg-foreground hover:text-background transition-colors"
+            href="/resume.pdf"
+            download="Aditya_Kalure_Resume.pdf"
+            className="text-sm font-medium px-4 py-2 border border-border rounded-full hover:bg-[#d1d5db] hover:text-[#111111] hover:border-[#d1d5db] transition-all duration-200"
           >
             Resume
           </a>
@@ -104,9 +103,8 @@ export default function Navbar() {
                 Contact
               </Link>
               <a
-                href="[PLACEHOLDER_RESUME_URL]"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/resume.pdf"
+                download="Aditya_Kalure_Resume.pdf"
                 className="py-4 text-base font-medium"
               >
                 Resume

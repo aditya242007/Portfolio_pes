@@ -23,7 +23,7 @@ export default function Contact() {
           
           <div className="flex flex-wrap items-center gap-4">
             <a 
-              href="mailto:[PLACEHOLDER_EMAIL]"
+              href="mailto:adityakalure237@gmail.com"
               className="group flex items-center gap-2 bg-foreground text-background px-6 py-4 rounded-full font-medium hover:bg-foreground/90 transition-colors"
             >
               <Mail size={18} />
@@ -32,7 +32,7 @@ export default function Contact() {
             </a>
             
             <a 
-              href="[PLACEHOLDER_LINKEDIN_URL]"
+              href="https://www.linkedin.com/in/aditya-kalure/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-4 rounded-full font-medium border border-border hover:bg-border/50 transition-colors"
@@ -42,7 +42,7 @@ export default function Contact() {
             </a>
             
             <a 
-              href="[PLACEHOLDER_GITHUB_URL]"
+              href="https://github.com/aditya242007"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-4 rounded-full font-medium border border-border hover:bg-border/50 transition-colors"

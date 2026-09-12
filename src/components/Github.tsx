@@ -20,7 +20,7 @@ export default function Github() {
             I actively build and contribute to projects on GitHub. It's where I experiment with new tools, push my side projects, and maintain open source code.
           </p>
           <a 
-            href="[PLACEHOLDER_GITHUB_URL]"
+            href="https://github.com/aditya242007"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium bg-foreground text-background hover:bg-foreground/90 transition-colors"
